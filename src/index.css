@@ -35,6 +35,15 @@ body {
   }
 }
 
+.floating-nav {
+  background-color: black;
+  border-radius: 0.5rem; /* equivalent to Tailwind's rounded-lg */
+  border-width: 1px;     /* equivalent to Tailwind's border (1px solid) */
+  border-style: solid;
+  /* border-color: currentColor; optional: you can customize */
+}
+
+
 @layer utilities {
   /* .border-hsla {
     @apply border border-white/20;
@@ -147,9 +156,12 @@ body {
   }
 }
 
-/* .indicator-line {
+.indicator-line {
   @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;
-} */
+}
+
+
+
 
 .indicator-line.active {
   animation: indicator-line 0.5s ease infinite;
