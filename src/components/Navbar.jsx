@@ -108,7 +108,7 @@ const NavBar = () => {
               {[1, 2, 3, 4].map((bar) => (
                 <div
                   key={bar}
-                  className={clsx("indicator-line", {
+                  className={clsx("h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out", {
                     active: isIndicatorActive,
                   })}
                   style={{
