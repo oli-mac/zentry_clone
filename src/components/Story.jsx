@@ -58,9 +58,9 @@ const FloatingImage = () => {
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 
-          <div className="story-img-container">
-            <div className="story-img-mask">
-              <div className="story-img-content">
+          <div className="relative md:h-dvh h-[90vh] w-full filter-[url(#flt_tag)] story-img-container">
+            <div className="absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5 story-img-mask">
+              <div className="absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px] story-img-content">
                 <img
                   ref={frameRef}
                   onMouseMove={handleMouseMove}
